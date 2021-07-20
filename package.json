@@ -1,0 +1,37 @@
+{
+  "name": "carcacounter-backend",
+  "version": "0.0.1",
+  "description": "Tiny project to develop a score manager for Carcassonne gameboard.",
+  "main": "source/server.ts",
+  "scripts": {
+    "build": "rm -rf build/ && prettier --write source/ && tsc",
+    "build-ps": "Remove-Item -Recurse -Force build/ && prettier --write source/ && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeLirio/carcacounter-backend.git"
+  },
+  "keywords": [
+    "carcassonne",
+    "backend",
+    "nodejs",
+    "typescript",
+    "mongodb"
+  ],
+  "author": "MikeLirio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikeLirio/carcacounter-backend/issues"
+  },
+  "homepage": "https://github.com/MikeLirio/carcacounter-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13"
+  }
+}
